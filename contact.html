@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Yogadaa Royal Resort - Panchgani Mahabaleshwar</title>
+  <meta name="description" content="Get in touch with Yogadaa Royal Resort in Panchgani, Mahabaleshwar. Inquire about luxury stays, room reservations, dining, and scenic hill retreat packages.">
+
+  <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            terracotta: {
+              DEFAULT: '#C2703E',
+              hover: '#AA5F33',
+              light: '#F8EDE6',
+              dark: '#934F25',
+            },
+            olive: {
+              DEFAULT: '#5A6B3C',
+              hover: '#4C5B32',
+              light: '#F1F5EB',
+              muted: '#8A996E',
+            },
+            cream: {
+              DEFAULT: '#F5F0E8',
+              light: '#FAF7F2',
+              dark: '#E7DFC8',
+            },
+            forest: {
+              DEFAULT: '#2C3E2D',
+              light: '#3C543E',
+              dark: '#1C291D',
+              deep: '#152016',
+            },
+            gold: {
+              DEFAULT: '#B8860B',
+              light: '#D4AF37',
+              dark: '#996F08',
+            },
+            warmwhite: '#FEFCF6',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F5F0E8;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #5A6B3C;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #C2703E;
+    }
+
+    /* Pulse effect for WhatsApp badge */
+    @keyframes subtle-pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .animate-subtle-pulse {
+      animation: subtle-pulse 3s infinite ease-in-out;
+    }
+
+    /* Form input styling helpers */
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      cursor: pointer;
+      opacity: 0.6;
+      transition: opacity 0.2s;
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-warmwhite text-forest font-sans antialiased selection:bg-terracotta selection:text-white">
+
+  <!-- ========================================================================= -->
+  <!-- 1. NAVIGATION BAR -->
+  <!-- ========================================================================= -->
+  <nav id="main-navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-4 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center space-x-3 group" aria-label="Yogadaa Royal Resort Home">
+        <img src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/bg-remove-logo.png" 
+             alt="Yogadaa Royal Resort Logo" 
+             class="h-12 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105 filter drop-shadow-md">
+        <div class="hidden sm:block">
+          <span class="block font-serif text-lg md:text-xl font-bold tracking-wider text-warmwhite nav-brand-text transition-colors">YOGADAA</span>
+          <span class="block text-[10px] tracking-[0.25em] text-cream uppercase nav-brand-subtext transition-colors">Royal Resort • Panchgani</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <div class="hidden lg:flex items-center space-x-8">
+        <a href="index.html" class="nav-link text-sm font-medium tracking-wide text-warmwhite/90 hover:text-gold transition-colors relative py-1">Home</a>
+        <a href="index.html#about" class="nav-link text-sm font-medium tracking-wide text-warmwhite/90 hover:text-gold transition-colors relative py-1">About</a>
+        <a href="rooms.html" class="nav-link text-sm font-medium tracking-wide text-warmwhite/90 hover:text-gold transition-colors relative py-1">Rooms</a>
+        <a href="index.html#dining" class="nav-link text-sm font-medium tracking-wide text-warmwhite/90 hover:text-gold transition-colors relative py-1">Dining</a>
+        <a href="index.html#services" class="nav-link text-sm font-medium tracking-wide text-warmwhite/90 hover:text-gold transition-colors relative py-1">Services</a>
+        <a href="index.html#gallery" class="nav-link text-sm font-medium tracking-wide text-warmwhite/90 hover:text-gold transition-colors relative py-1">Gallery</a>
+        <a href="contact.html" class="nav-link text-sm font-semibold tracking-wide text-gold border-b-2 border-gold relative py-1">Contact</a>
+      </div>
+
+      <!-- Right Action Button & Mobile Hamburger -->
+      <div class="flex items-center space-x-4">
+        <a href="#inquiry-form" 
+           class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs uppercase tracking-widest font-semibold bg-terracotta text-warmwhite hover:bg-terracotta-hover transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+          Book A Stay
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" 
+                type="button" 
+                class="lg:hidden p-2 rounded-lg text-warmwhite hover:text-gold hover:bg-forest/50 focus:outline-none focus:ring-2 focus:ring-gold transition-colors" 
+                aria-label="Toggle navigation menu">
+          <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden mt-3 px-4 pt-3 pb-6 bg-forest/95 backdrop-blur-md rounded-2xl border border-white/10 shadow-2xl transition-all">
+      <div class="flex flex-col space-y-3">
+        <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-warmwhite hover:bg-forest-light hover:text-gold transition-colors">Home</a>
+        <a href="index.html#about" class="px-3 py-2 rounded-lg text-sm font-medium text-warmwhite hover:bg-forest-light hover:text-gold transition-colors">About Us</a>
+        <a href="rooms.html" class="px-3 py-2 rounded-lg text-sm font-medium text-warmwhite hover:bg-forest-light hover:text-gold transition-colors">Rooms & Suites</a>
+        <a href="index.html#dining" class="px-3 py-2 rounded-lg text-sm font-medium text-warmwhite hover:bg-forest-light hover:text-gold transition-colors">Dining</a>
+        <a href="index.html#services" class="px-3 py-2 rounded-lg text-sm font-medium text-warmwhite hover:bg-forest-light hover:text-gold transition-colors">Services</a>
+        <a href="index.html#gallery" class="px-3 py-2 rounded-lg text-sm font-medium text-warmwhite hover:bg-forest-light hover:text-gold transition-colors">Gallery</a>
+        <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-gold bg-forest-light/60 border-l-4 border-gold">Contact</a>
+        
+        <div class="pt-3 border-t border-white/10">
+          <a href="#inquiry-form" class="w-full inline-flex items-center justify-center px-5 py-3 rounded-xl text-xs uppercase tracking-widest font-semibold bg-terracotta text-warmwhite hover:bg-terracotta-hover transition-colors shadow">
+            Book A Stay
+          </a>
+          <div class="mt-3 text-center">
+            <a href="tel:+919637373522" class="text-xs text-cream hover:text-gold transition-colors">
+              Direct: +91-9637373522
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ========================================================================= -->
+  <!-- 2. PAGE HERO BANNER (50vh) -->
+  <!-- ========================================================================= -->
+  <section class="relative h-[50vh] min-h-[380px] w-full flex items-center justify-center overflow-hidden bg-forest">
+    <!-- Hero Background Image with Parallax look -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DJI_20260323181303_0309_D-scaled.jpg" 
+           alt="Scenic Aerial View of Yogadaa Royal Resort in Panchgani" 
+           class="w-full h-full object-cover object-center transform scale-105 filter brightness-90">
+      <!-- Dark Forest Gradient Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-b from-forest-deep/80 via-forest/65 to-forest-deep/90"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center" data-aos="fade-up">
+      <!-- Tagline / Accent -->
+      <div class="inline-flex items-center justify-center space-x-2 mb-3">
+        <span class="h-px w-6 bg-gold"></span>
+        <span class="text-xs uppercase tracking-[0.3em] font-semibold text-gold">Get In Touch</span>
+        <span class="h-px w-6 bg-gold"></span>
+      </div>
+
+      <!-- Title -->
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl text-warmwhite font-bold tracking-tight mb-4 drop-shadow-sm">
+        Contact Us
+      </h1>
+
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="inline-flex items-center space-x-2 text-sm text-cream/80 bg-forest-dark/40 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/10">
+        <a href="index.html" class="hover:text-gold transition-colors flex items-center">
+          <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+          </svg>
+          Home
+        </a>
+        <span class="text-cream/40">/</span>
+        <span class="text-gold font-medium">Contact</span>
+      </nav>
+    </div>
+
+    <!-- Subtle bottom decorative curve/divider -->
+    <div class="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-warmwhite to-transparent pointer-events-none"></div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 3. CONTACT INFORMATION + FORM SECTION -->
+  <!-- ========================================================================= -->
+  <section id="inquiry-form" class="py-16 md:py-24 bg-warmwhite relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-start">
+        
+        <!-- ======================= LEFT COLUMN: CONTACT DETAILS ======================= -->
+        <div class="lg:col-span-5 space-y-8" data-aos="fade-right">
+          
+          <!-- Header -->
+          <div>
+            <div class="inline-flex items-center space-x-2 mb-2">
+              <span class="w-2 h-2 rounded-full bg-olive"></span>
+              <span class="text-xs uppercase tracking-[0.2em] font-semibold text-olive">We Are Here For You</span>
+            </div>
+            <h2 class="font-serif text-3xl sm:text-4xl text-forest font-bold leading-tight">
+              Get In Touch
+            </h2>
+            <p class="mt-3 text-forest/75 text-base sm:text-lg leading-relaxed">
+              We'd love to hear from you. Reach out to us for reservations, inquiries, or any assistance.
+            </p>
+          </div>
+
+          <!-- Contact Cards -->
+          <div class="space-y-4">
+            
+            <!-- Card 1: Address -->
+            <div class="group bg-white p-5 sm:p-6 rounded-2xl shadow-sm hover:shadow-md border border-cream-dark/60 transition-all duration-300 flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-olive-light text-olive flex items-center justify-center transition-transform group-hover:scale-110">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <span class="block text-xs font-semibold uppercase tracking-wider text-olive mb-1">Resort Location</span>
+                <p class="font-serif text-lg font-bold text-forest">Yogadaa Royal Resort</p>
+                <p class="text-sm text-forest/70 mt-0.5 leading-relaxed">
+                  Panchgani, Mahabaleshwar,<br>
+                  Maharashtra, India
+                </p>
+                <a href="https://maps.google.com/?q=Panchgani,Maharashtra" target="_blank" rel="noopener noreferrer" 
+                   class="inline-flex items-center text-xs font-semibold text-terracotta hover:text-terracotta-hover mt-2">
+                  Get directions
+                  <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 2: Phone -->
+            <div class="group bg-white p-5 sm:p-6 rounded-2xl shadow-sm hover:shadow-md border border-cream-dark/60 transition-all duration-300 flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-terracotta-light text-terracotta flex items-center justify-center transition-transform group-hover:scale-110">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <span class="block text-xs font-semibold uppercase tracking-wider text-olive mb-1">Direct Phone</span>
+                <a href="tel:+919637373522" class="font-serif text-lg font-bold text-forest hover:text-terracotta transition-colors block">
+                  +91-9637373522
+                </a>
+                <p class="text-xs text-forest/60 mt-1">
+                  Available for reservations & concierge assistance
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3: Email -->
+            <div class="group bg-white p-5 sm:p-6 rounded-2xl shadow-sm hover:shadow-md border border-cream-dark/60 transition-all duration-300 flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-olive-light text-olive flex items-center justify-center transition-transform group-hover:scale-110">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <span class="block text-xs font-semibold uppercase tracking-wider text-olive mb-1">Email Inquiries</span>
+                <a href="mailto:booking@yogadaaroyalresort.com" class="font-serif text-base sm:text-lg font-bold text-forest hover:text-terracotta transition-colors break-all">
+                  booking@yogadaaroyalresort.com
+                </a>
+                <p class="text-xs text-forest/60 mt-1">
+                  We reply to all inquiries within 24 hours
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4: Reception Hours -->
+            <div class="group bg-white p-5 sm:p-6 rounded-2xl shadow-sm hover:shadow-md border border-cream-dark/60 transition-all duration-300 flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-cream text-gold-dark flex items-center justify-center transition-transform group-hover:scale-110">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <span class="block text-xs font-semibold uppercase tracking-wider text-olive mb-1">Front Desk</span>
+                <p class="font-serif text-lg font-bold text-forest">Reception Hours: 24/7</p>
+                <p class="text-xs text-forest/60 mt-1">
+                  Round-the-clock check-in support & guest service
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Social Media Links Row -->
+          <div class="pt-4 border-t border-cream-dark/60">
+            <span class="block text-xs uppercase tracking-wider font-semibold text-olive mb-3">Connect On Social Media</span>
+            <div class="flex items-center space-x-3">
+              
+              <!-- Facebook -->
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
+                 class="w-10 h-10 rounded-full bg-cream hover:bg-terracotta text-forest hover:text-warmwhite flex items-center justify-center transition-all duration-300 shadow-sm transform hover:-translate-y-1"
+                 aria-label="Facebook">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
+                 class="w-10 h-10 rounded-full bg-cream hover:bg-terracotta text-forest hover:text-warmwhite flex items-center justify-center transition-all duration-300 shadow-sm transform hover:-translate-y-1"
+                 aria-label="Instagram">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+
+              <!-- Twitter / X -->
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" 
+                 class="w-10 h-10 rounded-full bg-cream hover:bg-terracotta text-forest hover:text-warmwhite flex items-center justify-center transition-all duration-300 shadow-sm transform hover:-translate-y-1"
+                 aria-label="Twitter / X">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
+                 class="w-10 h-10 rounded-full bg-cream hover:bg-terracotta text-forest hover:text-warmwhite flex items-center justify-center transition-all duration-300 shadow-sm transform hover:-translate-y-1"
+                 aria-label="LinkedIn">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.738-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Special Notice Box -->
+          <div class="p-5 rounded-2xl bg-olive-light/60 border border-olive/20 text-forest/80 text-sm flex items-start space-x-3">
+            <svg class="w-5 h-5 text-olive flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <p>
+              <strong class="font-semibold text-forest">Planning a Destination Wedding or Corporate Retreat?</strong> Call our dedicated hospitality coordinators for custom event packages and group tariffs.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- ======================= RIGHT COLUMN: CONTACT FORM ======================= -->
+        <div class="lg:col-span-7" data-aos="fade-left">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl border border-cream-dark/60 relative">
+            
+            <!-- Subtle Form Header Accent -->
+            <div class="mb-6">
+              <span class="inline-block text-xs uppercase tracking-[0.2em] font-semibold text-terracotta mb-1">Online Reservation & Inquiry</span>
+              <h2 class="font-serif text-2xl sm:text-3xl text-forest font-bold">
+                Send Us a Message
+              </h2>
+              <p class="text-sm text-forest/70 mt-1">
+                Please complete the form below. Our reservation desk will reach out promptly to confirm arrangements.
+              </p>
+            </div>
+
+            <!-- Form -->
+            <form id="contact-resort-form" action="#" method="POST" class="space-y-5">
+              
+              <!-- Full Name -->
+              <div>
+                <label for="full_name" class="block text-xs font-semibold uppercase tracking-wider text-forest/80 mb-1.5">
+                  Full Name <span class="text-terracotta">*</span>
+                </label>
+                <div class="relative">
+                  <input type="text" id="full_name" name="full_name" required
+                         placeholder="e.g. Vikram Malhotra"
+                         class="w-full px-4 py-3 bg-cream/30 border border-cream-dark rounded-xl text-forest placeholder-forest/40 focus:outline-none focus:ring-2 focus:ring-olive focus:border-olive transition-all text-sm">
+                </div>
+              </div>
+
+              <!-- Two Column: Email & Phone -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Email Address -->
+                <div>
+                  <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-forest/80 mb-1.5">
+                    Email Address <span class="text-terracotta">*</span>
+                  </label>
+                  <input type="email" id="email" name="email" required
+                         placeholder="e.g. vikram@example.com"
+                         class="w-full px-4 py-3 bg-cream/30 border border-cream-dark rounded-xl text-forest placeholder-forest/40 focus:outline-none focus:ring-2 focus:ring-olive focus:border-olive transition-all text-sm">
+                </div>
+
+                <!-- Phone Number -->
+                <div>
+                  <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-forest/80 mb-1.5">
+                    Phone Number <span class="text-terracotta">*</span>
+                  </label>
+                  <input type="tel" id="phone" name="phone" required
+                         placeholder="e.g. +91 98765 43210"
+                         class="w-full px-4 py-3 bg-cream/30 border border-cream-dark rounded-xl text-forest placeholder-forest/40 focus:outline-none focus:ring-2 focus:ring-olive focus:border-olive transition-all text-sm">
+                </div>
+              </div>
+
+              <!-- Two Column: Dates -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Check-in Date -->
+                <div>
+                  <label for="checkin_date" class="block text-xs font-semibold uppercase tracking-wider text-forest/80 mb-1.5">
+                    Check-in Date
+                  </label>
+                  <input type="date" id="checkin_date" name="checkin_date"
+                         class="w-full px-4 py-3 bg-cream/30 border border-cream-dark rounded-xl text-forest focus:outline-none focus:ring-2 focus:ring-olive focus:border-olive transition-all text-sm">
+                </div>
+
+                <!-- Check-out Date -->
+                <div>
+                  <label for="checkout_date" class="block text-xs font-semibold uppercase tracking-wider text-forest/80 mb-1.5">
+                    Check-out Date
+                  </label>
+                  <input type="date" id="checkout_date" name="checkout_date"
+                         class="w-full px-4 py-3 bg-cream/30 border border-cream-dark rounded-xl text-forest focus:outline-none focus:ring-2 focus:ring-olive focus:border-olive transition-all text-sm">
+                </div>
+              </div>
+
+              <!-- Two Column: Room Type & Guests -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Room Type -->
+                <div>
+                  <label for="room_type" class="block text-xs font-semibold uppercase tracking-wider text-forest/80 mb-1.5">
+                    Room Type
+                  </label>
+                  <div class="relative">
+                    <select id="room_type" name="room_type"
+                            class="w-full px-4 py-3 bg-cream/30 border border-cream-dark rounded-xl text-forest focus:outline-none focus:ring-2 focus:ring-olive focus:border-olive transition-all text-sm appearance-none cursor-pointer">
+                      <option value="" disabled selected>Select Room</option>
+                      <option value="Standard">Standard Room</option>
+                      <option value="Deluxe">Deluxe Room</option>
+                      <option value="Penthouse">Penthouse Suite</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-forest/60">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Number of Guests -->
+                <div>
+                  <label for="guests" class="block text-xs font-semibold uppercase tracking-wider text-forest/80 mb-1.5">
+                    Number of Guests
+                  </label>
+                  <div class="relative">
+                    <select id="guests" name="guests"
+                            class="w-full px-4 py-3 bg-cream/30 border border-cream-dark rounded-xl text-forest focus:outline-none focus:ring-2 focus:ring-olive focus:border-olive transition-all text-sm appearance-none cursor-pointer">
+                      <option value="" disabled selected>Select Guests</option>
+                      <option value="1">1 Guest</option>
+                      <option value="2">2 Guests</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4">4 Guests</option>
+                      <option value="5">5 Guests</option>
+                      <option value="6+">6+ Guests (Group)</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-forest/60">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Special Requests -->
+              <div>
+                <label for="special_requests" class="block text-xs font-semibold uppercase tracking-wider text-forest/80 mb-1.5">
+                  Special Requests / Inquiries
+                </label>
+                <textarea id="special_requests" name="special_requests" rows="4"
+                          placeholder="Tell us about special occasions, dietary preferences, extra bed requirements, or airport transfer assistance..."
+                          class="w-full px-4 py-3 bg-cream/30 border border-cream-dark rounded-xl text-forest placeholder-forest/40 focus:outline-none focus:ring-2 focus:ring-olive focus:border-olive transition-all text-sm"></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div>
+                <button type="submit" 
+                        class="w-full py-4 px-6 rounded-xl bg-terracotta text-cream font-semibold text-sm uppercase tracking-widest hover:bg-terracotta-hover transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center space-x-2 group">
+                  <span>Send Inquiry</span>
+                  <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Response Note & Trust Assurance -->
+              <div class="pt-2 flex items-center justify-center space-x-2 text-xs text-forest/70 text-center">
+                <svg class="w-4 h-4 text-olive flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+                <span>We'll respond within 24 hours. Your details are safe with us.</span>
+              </div>
+
+            </form>
+
+            <!-- Dynamic Feedback Alert (Success) -->
+            <div id="form-success-alert" class="hidden mt-6 p-4 rounded-2xl bg-olive-light border border-olive text-forest transition-all">
+              <div class="flex items-start space-x-3">
+                <div class="w-8 h-8 rounded-full bg-olive text-white flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-serif font-bold text-forest text-base">Inquiry Received with Thanks</h4>
+                  <p class="text-xs text-forest/80 mt-1">
+                    Thank you for reaching out! Our reservations team will contact you within 24 hours to confirm your reservation details.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 4. GOOGLE MAPS SECTION -->
+  <!-- ========================================================================= -->
+  <section class="py-16 md:py-20 bg-cream/40 relative border-t border-cream-dark/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Heading -->
+      <div class="text-center max-w-2xl mx-auto mb-10" data-aos="fade-up">
+        <div class="inline-flex items-center space-x-2 mb-2">
+          <span class="w-2 h-2 rounded-full bg-terracotta"></span>
+          <span class="text-xs uppercase tracking-[0.25em] font-semibold text-terracotta">Our Location</span>
+          <span class="w-2 h-2 rounded-full bg-terracotta"></span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-forest font-bold">
+          Find Us
+        </h2>
+        <p class="mt-3 text-forest/75 text-base sm:text-lg">
+          Perched amidst the scenic Sahyadri hills in Panchgani, surrounded by lush green strawberry valleys and misty morning views.
+        </p>
+      </div>
+
+      <!-- Map Container with Rounded Corners & Shadow -->
+      <div class="rounded-3xl shadow-xl overflow-hidden border-2 border-cream-dark/60 relative bg-white" data-aos="fade-up">
+        <!-- Google Maps Embed -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15282.507508266498!2d73.79627731000002!3d17.925074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2610bc93e5b41%3A0x6186c6bb0487d8a5!2sPanchgani%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1697176200000" 
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Google Map showing Yogadaa Royal Resort in Panchgani, Maharashtra"
+          class="w-full">
+        </iframe>
+
+        <!-- Map Floating Information Card -->
+        <div class="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 z-10 max-w-xs sm:max-w-sm bg-forest/90 backdrop-blur-md p-4 sm:p-5 rounded-2xl text-warmwhite shadow-2xl border border-white/10 hidden sm:block">
+          <div class="flex items-center space-x-2 text-gold text-xs font-semibold uppercase tracking-wider mb-1">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            </svg>
+            <span>Destination Retreat</span>
+          </div>
+          <h3 class="font-serif text-base font-bold text-warmwhite">Yogadaa Royal Resort</h3>
+          <p class="text-xs text-cream/80 mt-1">Panchgani, Mahabaleshwar, Maharashtra, India</p>
+          <a href="https://maps.google.com/?q=Panchgani,Maharashtra" target="_blank" rel="noopener noreferrer" 
+             class="inline-block mt-3 px-3 py-1.5 rounded-lg bg-terracotta text-white text-xs font-medium hover:bg-terracotta-hover transition-colors">
+            Open in Google Maps
+          </a>
+        </div>
+      </div>
+
+
+      <!-- ========================================================================= -->
+      <!-- 5. QUICK INFO CARDS -->
+      <!-- ========================================================================= -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mt-12">
+        
+        <!-- Card 1: Getting Here -->
+        <div class="bg-white rounded-2xl p-7 shadow-md hover:shadow-xl transition-all duration-300 border border-cream-dark/60 group transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-14 h-14 rounded-2xl bg-terracotta-light text-terracotta flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-inner">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+              <!-- Car shape icon -->
+              <circle cx="7" cy="17" r="2"/>
+              <circle cx="17" cy="17" r="2"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h-2v-4l2-5h12l2 5v4h-2m-8 0h4"/>
+            </svg>
+          </div>
+          <div class="inline-block text-[11px] uppercase tracking-wider font-semibold text-terracotta bg-terracotta-light/60 px-2.5 py-0.5 rounded-full mb-2">
+            By Road
+          </div>
+          <h3 class="font-serif text-xl font-bold text-forest mb-2">
+            Getting Here
+          </h3>
+          <p class="text-forest/70 text-sm leading-relaxed">
+            Located in the scenic hills of Panchgani, easily accessible from Pune (100 km) and Mumbai (260 km). We can arrange pickup services.
+          </p>
+        </div>
+
+        <!-- Card 2: Nearest Airport -->
+        <div class="bg-white rounded-2xl p-7 shadow-md hover:shadow-xl transition-all duration-300 border border-cream-dark/60 group transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-14 h-14 rounded-2xl bg-olive-light text-olive flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-inner">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <!-- Airplane icon -->
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+            </svg>
+          </div>
+          <div class="inline-block text-[11px] uppercase tracking-wider font-semibold text-olive bg-olive-light/60 px-2.5 py-0.5 rounded-full mb-2">
+            Air Travel
+          </div>
+          <h3 class="font-serif text-xl font-bold text-forest mb-2">
+            Nearest Airport
+          </h3>
+          <p class="text-forest/70 text-sm leading-relaxed">
+            Pune International Airport (PNQ) — approximately 2.5 hours drive. Mumbai Airport (BOM) — approximately 5 hours drive.
+          </p>
+        </div>
+
+        <!-- Card 3: Check-in / Check-out -->
+        <div class="bg-white rounded-2xl p-7 shadow-md hover:shadow-xl transition-all duration-300 border border-cream-dark/60 group transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-14 h-14 rounded-2xl bg-cream text-gold-dark flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-inner">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <!-- Hotel building icon -->
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+          </div>
+          <div class="inline-block text-[11px] uppercase tracking-wider font-semibold text-gold-dark bg-cream-dark/50 px-2.5 py-0.5 rounded-full mb-2">
+            Timings
+          </div>
+          <h3 class="font-serif text-xl font-bold text-forest mb-2">
+            Check-in / Check-out
+          </h3>
+          <p class="text-forest/70 text-sm leading-relaxed">
+            Check-in: 12:00 PM | Check-out: 11:00 AM. Early check-in and late check-out available on request.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 6. FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="bg-forest text-warmwhite relative overflow-hidden border-t border-forest-light">
+    <!-- Subtle Pattern Accent -->
+    <div class="absolute inset-0 opacity-5 pointer-events-none bg-[radial-gradient(#F5F0E8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+        
+        <!-- Column 1: Logo & Resort Introduction -->
+        <div class="space-y-4">
+          <a href="index.html" class="inline-block">
+            <img src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/bg-remove-logo.png" 
+                 alt="Yogadaa Royal Resort" 
+                 class="h-16 w-auto object-contain filter drop-shadow">
+          </a>
+          <p class="text-sm text-cream/80 leading-relaxed">
+            A sanctuary of royal comfort and serene tranquility nestled in the picturesque hills of Panchgani, Mahabaleshwar. Reconnect with nature in uncompromising luxury.
+          </p>
+          <div class="pt-2">
+            <span class="inline-flex items-center text-xs text-gold uppercase tracking-widest font-semibold">
+              ✦ Luxury Nature Resort
+            </span>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h4 class="font-serif text-lg font-bold text-warmwhite mb-4 border-b border-white/10 pb-2">
+            Quick Links
+          </h4>
+          <ul class="space-y-2.5 text-sm text-cream/80">
+            <li>
+              <a href="index.html" class="hover:text-gold transition-colors flex items-center">
+                <span class="text-gold mr-2">›</span> Home
+              </a>
+            </li>
+            <li>
+              <a href="index.html#about" class="hover:text-gold transition-colors flex items-center">
+                <span class="text-gold mr-2">›</span> About Resort
+              </a>
+            </li>
+            <li>
+              <a href="rooms.html" class="hover:text-gold transition-colors flex items-center">
+                <span class="text-gold mr-2">›</span> Rooms & Suites
+              </a>
+            </li>
+            <li>
+              <a href="index.html#dining" class="hover:text-gold transition-colors flex items-center">
+                <span class="text-gold mr-2">›</span> Fine Dining
+              </a>
+            </li>
+            <li>
+              <a href="index.html#services" class="hover:text-gold transition-colors flex items-center">
+                <span class="text-gold mr-2">›</span> Amenities & Services
+              </a>
+            </li>
+            <li>
+              <a href="index.html#gallery" class="hover:text-gold transition-colors flex items-center">
+                <span class="text-gold mr-2">›</span> Photo Gallery
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="text-gold font-semibold flex items-center">
+                <span class="text-gold mr-2">›</span> Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Details -->
+        <div>
+          <h4 class="font-serif text-lg font-bold text-warmwhite mb-4 border-b border-white/10 pb-2">
+            Contact & Location
+          </h4>
+          <ul class="space-y-3 text-sm text-cream/80">
+            <li class="flex items-start space-x-3">
+              <svg class="w-5 h-5 text-terracotta flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              </svg>
+              <span>Yogadaa Royal Resort, Panchgani, Mahabaleshwar, Maharashtra, India</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-terracotta flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+              <a href="tel:+919637373522" class="hover:text-gold transition-colors font-medium">
+                +91-9637373522
+              </a>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-terracotta flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              <a href="mailto:booking@yogadaaroyalresort.com" class="hover:text-gold transition-colors break-all">
+                booking@yogadaaroyalresort.com
+              </a>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Reception Desk: 24/7 Hours</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Stay Informed & Direct Reservation -->
+        <div class="space-y-4">
+          <h4 class="font-serif text-lg font-bold text-warmwhite mb-4 border-b border-white/10 pb-2">
+            Direct Reservations
+          </h4>
+          <p class="text-sm text-cream/80">
+            Call our desk directly or connect on WhatsApp for immediate room allotment, best rate guarantee, and customized holiday itineraries.
+          </p>
+          <a href="tel:+919637373522" 
+             class="inline-flex items-center justify-center w-full px-5 py-3 rounded-xl bg-olive hover:bg-olive-hover text-warmwhite text-xs font-semibold uppercase tracking-wider transition-all shadow-md">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            Call: +91-9637373522
+          </a>
+          <div class="pt-2">
+            <span class="block text-xs uppercase tracking-wider text-cream/60 mb-2">Follow Us</span>
+            <div class="flex space-x-3 text-cream/80">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors" aria-label="Facebook">Facebook</a>
+              <span>•</span>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors" aria-label="Instagram">Instagram</a>
+              <span>•</span>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors" aria-label="Twitter">Twitter</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-cream/60 space-y-4 sm:space-y-0">
+        <div>
+          &copy; 2026 Yogadaa Royal Resort. All rights reserved. Panchgani, Mahabaleshwar.
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-gold transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-gold transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-gold transition-colors">Cancellation Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ========================================================================= -->
+  <!-- 7. WHATSAPP FLOATING BUTTON -->
+  <!-- ========================================================================= -->
+  <aside aria-label="Instant WhatsApp Chat" class="fixed bottom-6 right-6 z-50">
+    <a href="https://wa.me/919637373522?text=Hello%20Yogadaa%20Royal%20Resort%2C%20I%20would%20like%20to%20inquire%20about%20a%20stay." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="group flex items-center space-x-2 bg-[#25D366] text-white p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-2xl hover:bg-[#20ba5a] transition-all duration-300 transform hover:scale-105 animate-subtle-pulse"
+       aria-label="Chat with Yogadaa Royal Resort on WhatsApp">
+      
+      <!-- WhatsApp SVG Icon -->
+      <svg class="w-6 h-6 fill-current flex-shrink-0" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+      
+      <span class="text-xs font-semibold tracking-wide hidden sm:inline-block">Chat with us</span>
+    </a>
+  </aside>
+
+
+  <!-- ========================================================================= -->
+  <!-- SCRIPTS: AOS & INTERACTIONS -->
+  <!-- ========================================================================= -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS animations
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+      });
+
+      // Sticky Navbar background color change on scroll
+      const navbar = document.getElementById('main-navbar');
+      const brandTexts = document.querySelectorAll('.nav-brand-text, .nav-brand-subtext');
+
+      function updateNavbar() {
+        if (window.scrollY > 40) {
+          navbar.classList.add('bg-forest/95', 'backdrop-blur-md', 'shadow-xl', 'py-3');
+          navbar.classList.remove('py-4');
+        } else {
+          navbar.classList.remove('bg-forest/95', 'backdrop-blur-md', 'shadow-xl', 'py-3');
+          navbar.classList.add('py-4');
+        }
+      }
+
+      window.addEventListener('scroll', updateNavbar, { passive: true });
+      updateNavbar(); // initial check
+
+      // Mobile Menu Toggle
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const closeIcon = document.getElementById('close-icon');
+
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', function() {
+          const isExpanded = !mobileMenu.classList.contains('hidden');
+          if (isExpanded) {
+            mobileMenu.classList.add('hidden');
+            hamburgerIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
+          } else {
+            mobileMenu.classList.remove('hidden');
+            hamburgerIcon.classList.add('hidden');
+            closeIcon.classList.remove('hidden');
+          }
+        });
+
+        // Close menu on link click
+        mobileMenu.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            mobileMenu.classList.add('hidden');
+            hamburgerIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
+          });
+        });
+      }
+
+      // Date Pickers: Set today as minimum date
+      const checkinInput = document.getElementById('checkin_date');
+      const checkoutInput = document.getElementById('checkout_date');
+
+      if (checkinInput && checkoutInput) {
+        const today = new Date().toISOString().split('T')[0];
+        checkinInput.min = today;
+        checkoutInput.min = today;
+
+        checkinInput.addEventListener('change', function() {
+          if (checkinInput.value) {
+            checkoutInput.min = checkinInput.value;
+            if (checkoutInput.value && checkoutInput.value <= checkinInput.value) {
+              // Automatically adjust checkout to checkin + 1 day
+              const nextDay = new Date(checkinInput.value);
+              nextDay.setDate(nextDay.getDate() + 1);
+              checkoutInput.value = nextDay.toISOString().split('T')[0];
+            }
+          }
+        });
+      }
+
+      // Interactive Contact Form Handling
+      const contactForm = document.getElementById('contact-resort-form');
+      const successAlert = document.getElementById('form-success-alert');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Submit simulation
+          const submitBtn = contactForm.querySelector('button[type="submit"]');
+          const originalText = submitBtn.innerHTML;
+
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = `
+            <svg class="animate-spin -ml-1 mr-3 h-4 w-4 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+            </svg>
+            Sending...
+          `;
+
+          setTimeout(function() {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+            
+            // Show alert
+            if (successAlert) {
+              successAlert.classList.remove('hidden');
+              successAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+
+            // Reset form fields
+            contactForm.reset();
+          }, 900);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

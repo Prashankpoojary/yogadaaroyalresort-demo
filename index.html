@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogadaa Royal Resort | A Palace of Peace, A World of Luxury | Panchgani Mahabaleshwar</title>
+  <meta name="description" content="Experience peaceful luxury at Yogadaa Royal Resort in Panchgani, Mahabaleshwar. Scenic hill views, fine dining, swimming pool, luxury rooms, and royal hospitality.">
+  <link rel="icon" type="image/png" href="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/bg-remove-logo.png">
+
+  <!-- Google Fonts: Playfair Display + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            terracotta: '#C2703E',
+            olive: '#5A6B3C',
+            cream: '#F5F0E8',
+            'forest-dark': '#2C3E2D',
+            gold: '#B8860B',
+            'warm-white': '#FEFCF6',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          boxShadow: {
+            'luxury': '0 20px 40px -15px rgba(44, 62, 45, 0.12)',
+            'card': '0 10px 30px -10px rgba(0, 0, 0, 0.08)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Parallax & Smooth Transitions */
+    .hero-parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    @media (max-width: 768px) {
+      .hero-parallax {
+        background-attachment: scroll; /* Mobile smooth scrolling */
+      }
+    }
+    
+    /* WhatsApp Pulse Animation */
+    @keyframes pulse-ring {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+      }
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+    /* Custom AOS Animation Fallbacks */
+    [data-aos="fade-in"], [data-aos="fadeIn"] {
+      opacity: 0;
+      transition-property: opacity, transform;
+    }
+    [data-aos="fade-in"].aos-animate, [data-aos="fadeIn"].aos-animate {
+      opacity: 1;
+    }
+    [data-aos="fadeInLeft"] {
+      opacity: 0;
+      transform: translate3d(-50px, 0, 0);
+      transition-property: opacity, transform;
+    }
+    [data-aos="fadeInLeft"].aos-animate {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+    [data-aos="fadeInRight"] {
+      opacity: 0;
+      transform: translate3d(50px, 0, 0);
+      transition-property: opacity, transform;
+    }
+    [data-aos="fadeInRight"].aos-animate {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F5F0E8;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C2703E;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #5A6B3C;
+    }
+  </style>
+</head>
+<body class="bg-warm-white text-forest-dark font-sans antialiased selection:bg-terracotta selection:text-cream">
+
+  <!-- ========================================================= -->
+  <!-- 1. NAVIGATION BAR (Sticky)                                -->
+  <!-- ========================================================= -->
+  <header id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-3 group" aria-label="Yogadaa Royal Resort Homepage">
+          <div id="logo-container" class="p-1 rounded-lg bg-cream/90 backdrop-blur-sm shadow-sm transition group-hover:scale-105 duration-300">
+            <img 
+              src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/bg-remove-logo.png" 
+              alt="Yogadaa Royal Resort Logo" 
+              class="h-[58px] w-auto object-contain"
+            />
+          </div>
+          <span class="sr-only">Yogadaa Royal Resort</span>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <nav id="desktop-nav-container" class="hidden md:flex items-center space-x-1 lg:space-x-2 bg-cream/90 md:bg-cream/80 backdrop-blur-md px-6 py-2.5 rounded-full shadow-sm border border-forest-dark/10 transition-all duration-300">
+          <a href="#hero" class="nav-item text-forest-dark hover:text-terracotta px-3.5 py-1.5 text-sm font-medium transition duration-200">Home</a>
+          <a href="#about" class="nav-item text-forest-dark hover:text-terracotta px-3.5 py-1.5 text-sm font-medium transition duration-200">About</a>
+          <a href="rooms.html" class="nav-item text-forest-dark hover:text-terracotta px-3.5 py-1.5 text-sm font-medium transition duration-200">Rooms</a>
+          <a href="#dining" class="nav-item text-forest-dark hover:text-terracotta px-3.5 py-1.5 text-sm font-medium transition duration-200">Dining</a>
+          <a href="#amenities" class="nav-item text-forest-dark hover:text-terracotta px-3.5 py-1.5 text-sm font-medium transition duration-200">Services</a>
+          <a href="#gallery" class="nav-item text-forest-dark hover:text-terracotta px-3.5 py-1.5 text-sm font-medium transition duration-200">Gallery</a>
+          <a href="contact.html" class="nav-item text-forest-dark hover:text-terracotta px-3.5 py-1.5 text-sm font-medium transition duration-200">Contact</a>
+        </nav>
+
+        <!-- Right CTA Button (Desktop) -->
+        <div class="hidden lg:flex items-center space-x-4">
+          <a href="contact.html" class="bg-terracotta hover:bg-[#a55a2d] text-cream px-5 py-2.5 rounded-full text-sm font-semibold tracking-wide transition duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+            Book A Stay
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex md:hidden">
+          <button 
+            id="mobile-menu-btn" 
+            type="button" 
+            class="bg-cream/90 backdrop-blur-md text-forest-dark p-2.5 rounded-lg border border-forest-dark/15 focus:outline-none focus:ring-2 focus:ring-terracotta"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pt-3 pb-6 transition-all duration-300">
+      <div class="bg-cream border border-forest-dark/15 rounded-2xl shadow-xl p-5 space-y-3">
+        <a href="#hero" class="mobile-link block text-forest-dark hover:text-terracotta font-medium px-3 py-2 rounded-lg hover:bg-forest-dark/5 transition">Home</a>
+        <a href="#about" class="mobile-link block text-forest-dark hover:text-terracotta font-medium px-3 py-2 rounded-lg hover:bg-forest-dark/5 transition">About</a>
+        <a href="rooms.html" class="mobile-link block text-forest-dark hover:text-terracotta font-medium px-3 py-2 rounded-lg hover:bg-forest-dark/5 transition">Rooms</a>
+        <a href="#dining" class="mobile-link block text-forest-dark hover:text-terracotta font-medium px-3 py-2 rounded-lg hover:bg-forest-dark/5 transition">Dining</a>
+        <a href="#amenities" class="mobile-link block text-forest-dark hover:text-terracotta font-medium px-3 py-2 rounded-lg hover:bg-forest-dark/5 transition">Services</a>
+        <a href="#gallery" class="mobile-link block text-forest-dark hover:text-terracotta font-medium px-3 py-2 rounded-lg hover:bg-forest-dark/5 transition">Gallery</a>
+        <a href="contact.html" class="mobile-link block text-forest-dark hover:text-terracotta font-medium px-3 py-2 rounded-lg hover:bg-forest-dark/5 transition">Contact</a>
+        <div class="pt-2 border-t border-forest-dark/10">
+          <a href="contact.html" class="block w-full text-center bg-terracotta text-cream py-3 rounded-xl font-semibold shadow hover:bg-[#a55a2d] transition">
+            Book A Stay
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ========================================================= -->
+  <!-- 2. HERO SECTION (Full viewport height + Parallax)         -->
+  <!-- ========================================================= -->
+  <section 
+    id="hero" 
+    class="relative min-h-screen flex items-center justify-center hero-parallax overflow-hidden" 
+    style="background-image: url('https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DJI_20260323184751_0332_D-scaled.jpg');"
+  >
+    <!-- Dark overlay (30% - 40% with subtle gradient) -->
+    <div class="absolute inset-0 bg-forest-dark/40 bg-gradient-to-b from-forest-dark/50 via-forest-dark/30 to-forest-dark/70 pointer-events-none"></div>
+
+    <!-- Center Content -->
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center text-warm-white py-24">
+      
+      <!-- Small subtitle: "Welcome to" in gold -->
+      <p data-aos="fade-in" data-aos-duration="900" class="text-gold tracking-[0.3em] uppercase text-sm sm:text-base font-semibold mb-3">
+        Welcome to
+      </p>
+
+      <!-- Main Title -->
+      <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" class="text-4xl sm:text-6xl md:text-7xl font-serif font-bold text-white tracking-tight drop-shadow-md leading-tight">
+        Yogadaa Royal Resort
+      </h1>
+
+      <!-- Tagline -->
+      <p data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400" class="font-serif italic text-cream text-xl sm:text-2xl md:text-3xl mt-4 max-w-2xl mx-auto leading-relaxed drop-shadow">
+        "A Palace of Peace, A World of Luxury"
+      </p>
+
+      <!-- Divider line (gold, thin) -->
+      <div data-aos="fade-in" data-aos-duration="800" data-aos-delay="500" class="w-24 h-0.5 bg-gold mx-auto my-6 opacity-90"></div>
+
+      <!-- Subtitle -->
+      <p data-aos="fade-in" data-aos-duration="1000" data-aos-delay="600" class="text-cream text-sm sm:text-base font-medium tracking-[0.25em] uppercase mb-10">
+        Panchgani, Mahabaleshwar
+      </p>
+
+      <!-- CTA Button -->
+      <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="800">
+        <a 
+          href="#about" 
+          class="inline-flex items-center gap-2 bg-terracotta hover:bg-[#a55a2d] text-cream px-8 py-4 rounded-full font-medium text-base sm:text-lg transition-all duration-300 transform hover:-translate-y-1 shadow-xl hover:shadow-2xl border border-cream/20"
+        >
+          <span>Explore Our Resort</span>
+          <svg class="w-5 h-5 transition-transform duration-200 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Subtle Scroll Down Indicator -->
+    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-cream/70 text-center animate-bounce z-10 pointer-events-none">
+      <span class="text-xs uppercase tracking-widest block mb-1">Scroll</span>
+      <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7-7-7"></path>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- 3. ABOUT / WELCOME SECTION                                -->
+  <!-- ========================================================= -->
+  <section id="about" class="py-24 md:py-32 bg-cream text-forest-dark relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left: Image with Decorative Border Offset -->
+        <div data-aos="fade-right" class="relative group">
+          <!-- Decorative Frame Offset -->
+          <div class="absolute -bottom-4 -right-4 w-full h-full border-2 border-terracotta/40 rounded-3xl -z-0 transform transition-transform duration-500 group-hover:translate-x-1 group-hover:translate-y-1"></div>
+          <div class="absolute -top-3 -left-3 w-24 h-24 border-t-2 border-l-2 border-olive/40 rounded-tl-3xl -z-0"></div>
+
+          <!-- Main Image -->
+          <div class="relative z-10 overflow-hidden rounded-3xl shadow-luxury bg-forest-dark/10">
+            <img 
+              src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02831-scaled.jpg" 
+              alt="Yogadaa Royal Resort Scenic Grounds" 
+              loading="lazy"
+              class="w-full h-[400px] sm:h-[480px] lg:h-[520px] object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            />
+          </div>
+
+          <!-- Hillside Badge Floating Card -->
+          <div class="absolute bottom-6 left-6 z-20 bg-warm-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-forest-dark/10 hidden sm:flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-olive/15 flex items-center justify-center text-olive">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-olive font-semibold">Scenic Tranquility</p>
+              <p class="text-sm font-serif font-bold text-forest-dark">Panchgani Hilltop View</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div data-aos="fade-left" class="space-y-6">
+          <div class="inline-flex items-center gap-2">
+            <span class="w-8 h-[2px] bg-olive"></span>
+            <span class="text-olive tracking-[0.25em] uppercase text-xs sm:text-sm font-bold">ABOUT US</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-forest-dark leading-tight">
+            A Place Where Every Moment Feels Alive
+          </h2>
+
+          <p class="text-forest-dark/85 text-base sm:text-lg leading-relaxed font-normal">
+            Experience the perfect balance of natural calm and modern comfort at Yogadaa Royal Resort — where every moment feels pure and peaceful. Nestled in the scenic hills of Panchgani, Mahabaleshwar, our resort offers breathtaking views, world-class amenities, and warm hospitality that makes you feel right at home.
+          </p>
+
+          <p class="text-forest-dark/80 text-base sm:text-lg leading-relaxed font-normal">
+            Whether you're seeking a romantic getaway, a family vacation, or a peaceful retreat, Yogadaa Royal Resort promises an unforgettable experience surrounded by nature's finest beauty.
+          </p>
+
+          <div class="pt-2">
+            <a 
+              href="rooms.html" 
+              class="inline-flex items-center gap-2 text-terracotta font-semibold text-lg hover:text-[#a55a2d] transition duration-200 group"
+            >
+              <span>Learn More</span>
+              <span class="transform transition-transform duration-200 group-hover:translate-x-1">→</span>
+            </a>
+          </div>
+
+          <!-- Quick Highlight Icons -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-forest-dark/10">
+            <div class="space-y-1">
+              <span class="text-terracotta font-serif text-2xl font-bold">4,200+</span>
+              <p class="text-xs text-forest-dark/70 uppercase tracking-wide">Ft. Above Sea Level</p>
+            </div>
+            <div class="space-y-1">
+              <span class="text-terracotta font-serif text-2xl font-bold">100%</span>
+              <p class="text-xs text-forest-dark/70 uppercase tracking-wide">Valley Serenity</p>
+            </div>
+            <div class="space-y-1">
+              <span class="text-terracotta font-serif text-2xl font-bold">Royal</span>
+              <p class="text-xs text-forest-dark/70 uppercase tracking-wide">Warm Hospitality</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- 4. AMENITIES / HIGHLIGHTS SECTION                         -->
+  <!-- ========================================================= -->
+  <section id="amenities" class="py-24 bg-[#EBF0E6] text-forest-dark relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <div class="inline-flex items-center gap-2 justify-center mb-3">
+          <span class="w-8 h-[2px] bg-olive"></span>
+          <span class="text-olive tracking-[0.25em] uppercase text-xs sm:text-sm font-bold">RESORT HIGHLIGHTS</span>
+          <span class="w-8 h-[2px] bg-olive"></span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-forest-dark leading-tight">
+          Why Choose Us
+        </h2>
+        <p class="text-forest-dark/75 mt-3 text-base sm:text-lg">
+          Thoughtfully curated amenities crafted for leisurely hills retreats and memorable stays.
+        </p>
+      </div>
+
+      <!-- 6 Amenity Cards (3x2 Grid) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- 1. Swimming Pool -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="100" 
+          class="bg-white rounded-2xl p-8 shadow-card hover:shadow-luxury transition-all duration-300 transform hover:-translate-y-2 border border-forest-dark/5 group"
+        >
+          <div class="w-14 h-14 rounded-2xl bg-olive/10 group-hover:bg-olive/20 text-olive flex items-center justify-center text-3xl mb-6 transition-colors duration-300">
+            🏊
+          </div>
+          <h3 class="text-xl font-serif font-bold text-forest-dark mb-3 group-hover:text-terracotta transition-colors">
+            Swimming Pool
+          </h3>
+          <p class="text-forest-dark/75 text-sm sm:text-base leading-relaxed">
+            Dive into relaxation in our stunning outdoor pool with panoramic valley views.
+          </p>
+        </div>
+
+        <!-- 2. Fine Dining -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="200" 
+          class="bg-white rounded-2xl p-8 shadow-card hover:shadow-luxury transition-all duration-300 transform hover:-translate-y-2 border border-forest-dark/5 group"
+        >
+          <div class="w-14 h-14 rounded-2xl bg-terracotta/10 group-hover:bg-terracotta/20 text-terracotta flex items-center justify-center text-3xl mb-6 transition-colors duration-300">
+            🍽️
+          </div>
+          <h3 class="text-xl font-serif font-bold text-forest-dark mb-3 group-hover:text-terracotta transition-colors">
+            Fine Dining
+          </h3>
+          <p class="text-forest-dark/75 text-sm sm:text-base leading-relaxed">
+            Savor exquisite cuisine crafted from the freshest local ingredients.
+          </p>
+        </div>
+
+        <!-- 3. On-site Parking -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="300" 
+          class="bg-white rounded-2xl p-8 shadow-card hover:shadow-luxury transition-all duration-300 transform hover:-translate-y-2 border border-forest-dark/5 group"
+        >
+          <div class="w-14 h-14 rounded-2xl bg-olive/10 group-hover:bg-olive/20 text-olive flex items-center justify-center text-3xl mb-6 transition-colors duration-300">
+            🅿️
+          </div>
+          <h3 class="text-xl font-serif font-bold text-forest-dark mb-3 group-hover:text-terracotta transition-colors">
+            On-site Parking
+          </h3>
+          <p class="text-forest-dark/75 text-sm sm:text-base leading-relaxed">
+            Complimentary secure parking for all our valued guests.
+          </p>
+        </div>
+
+        <!-- 4. Gym Access 24/7 -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="400" 
+          class="bg-white rounded-2xl p-8 shadow-card hover:shadow-luxury transition-all duration-300 transform hover:-translate-y-2 border border-forest-dark/5 group"
+        >
+          <div class="w-14 h-14 rounded-2xl bg-terracotta/10 group-hover:bg-terracotta/20 text-terracotta flex items-center justify-center text-3xl mb-6 transition-colors duration-300">
+            💪
+          </div>
+          <h3 class="text-xl font-serif font-bold text-forest-dark mb-3 group-hover:text-terracotta transition-colors">
+            Gym Access 24/7
+          </h3>
+          <p class="text-forest-dark/75 text-sm sm:text-base leading-relaxed">
+            State-of-the-art fitness center available round the clock.
+          </p>
+        </div>
+
+        <!-- 5. Easy Reservations -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="500" 
+          class="bg-white rounded-2xl p-8 shadow-card hover:shadow-luxury transition-all duration-300 transform hover:-translate-y-2 border border-forest-dark/5 group"
+        >
+          <div class="w-14 h-14 rounded-2xl bg-olive/10 group-hover:bg-olive/20 text-olive flex items-center justify-center text-3xl mb-6 transition-colors duration-300">
+            📋
+          </div>
+          <h3 class="text-xl font-serif font-bold text-forest-dark mb-3 group-hover:text-terracotta transition-colors">
+            Easy Reservations
+          </h3>
+          <p class="text-forest-dark/75 text-sm sm:text-base leading-relaxed">
+            Seamless booking experience with instant confirmation.
+          </p>
+        </div>
+
+        <!-- 6. Best Location -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="600" 
+          class="bg-white rounded-2xl p-8 shadow-card hover:shadow-luxury transition-all duration-300 transform hover:-translate-y-2 border border-forest-dark/5 group"
+        >
+          <div class="w-14 h-14 rounded-2xl bg-gold/15 group-hover:bg-gold/25 text-gold flex items-center justify-center text-3xl mb-6 transition-colors duration-300">
+            📍
+          </div>
+          <h3 class="text-xl font-serif font-bold text-forest-dark mb-3 group-hover:text-terracotta transition-colors">
+            Best Location
+          </h3>
+          <p class="text-forest-dark/75 text-sm sm:text-base leading-relaxed">
+            Prime hilltop location with breathtaking panoramic views.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- 5. ROOMS PREVIEW SECTION                                  -->
+  <!-- ========================================================= -->
+  <section id="rooms" class="py-24 md:py-32 bg-warm-white text-forest-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <div class="inline-flex items-center gap-2 justify-center mb-3">
+          <span class="w-8 h-[2px] bg-terracotta"></span>
+          <span class="text-terracotta tracking-[0.25em] uppercase text-xs sm:text-sm font-bold">ACCOMMODATIONS</span>
+          <span class="w-8 h-[2px] bg-terracotta"></span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-forest-dark leading-tight">
+          Explore Our Rooms
+        </h2>
+        <p class="text-forest-dark/75 mt-3 text-base sm:text-lg">
+          Immerse yourself in understated opulence, premium linens, and breathtaking mountain landscapes.
+        </p>
+      </div>
+
+      <!-- 3 Room Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- 1. Standard Room -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="100" 
+          class="bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-luxury transition-all duration-300 transform hover:-translate-y-2 border border-forest-dark/5 flex flex-col group"
+        >
+          <!-- Image -->
+          <div class="relative overflow-hidden aspect-[4/3] bg-forest-dark/10">
+            <img 
+              src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02492.jpg" 
+              alt="Standard Room at Yogadaa Royal Resort" 
+              loading="lazy"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+            />
+            <div class="absolute top-4 left-4 bg-forest-dark/80 backdrop-blur-md text-cream text-xs font-semibold px-3.5 py-1.5 rounded-full tracking-wider uppercase">
+              Classic Comfort
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-serif font-bold text-forest-dark mb-2 group-hover:text-terracotta transition-colors">
+                Standard Room
+              </h3>
+              <p class="text-forest-dark/75 text-sm sm:text-base leading-relaxed mb-6">
+                A warm, inviting sanctuary thoughtfully appointed with cozy bedding, modern conveniences, and soothing garden or valley views.
+              </p>
+            </div>
+            
+            <div class="pt-4 border-t border-forest-dark/10 flex items-center justify-between">
+              <span class="text-xs uppercase tracking-wider text-olive font-semibold">King / Twin Bed</span>
+              <a 
+                href="rooms.html" 
+                class="inline-flex items-center gap-1.5 text-terracotta font-semibold text-sm hover:text-[#a55a2d] transition group-hover:translate-x-1 duration-200"
+              >
+                <span>View Details</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Deluxe Room -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="200" 
+          class="bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-luxury transition-all duration-300 transform hover:-translate-y-2 border border-forest-dark/5 flex flex-col group"
+        >
+          <!-- Image -->
+          <div class="relative overflow-hidden aspect-[4/3] bg-forest-dark/10">
+            <img 
+              src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-16-at-6.39.48-PM.jpeg" 
+              alt="Deluxe Room at Yogadaa Royal Resort" 
+              loading="lazy"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+            />
+            <div class="absolute top-4 left-4 bg-terracotta text-cream text-xs font-semibold px-3.5 py-1.5 rounded-full tracking-wider uppercase shadow-sm">
+              Popular Choice
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-serif font-bold text-forest-dark mb-2 group-hover:text-terracotta transition-colors">
+                Deluxe Room
+              </h3>
+              <p class="text-forest-dark/75 text-sm sm:text-base leading-relaxed mb-6">
+                Expansive luxury featuring private balconies with misty hill vistas, opulent wooden finishes, and generous lounge seating.
+              </p>
+            </div>
+            
+            <div class="pt-4 border-t border-forest-dark/10 flex items-center justify-between">
+              <span class="text-xs uppercase tracking-wider text-olive font-semibold">Private Balcony</span>
+              <a 
+                href="rooms.html" 
+                class="inline-flex items-center gap-1.5 text-terracotta font-semibold text-sm hover:text-[#a55a2d] transition group-hover:translate-x-1 duration-200"
+              >
+                <span>View Details</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Penthouse Room -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="300" 
+          class="bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-luxury transition-all duration-300 transform hover:-translate-y-2 border border-forest-dark/5 flex flex-col group"
+        >
+          <!-- Image -->
+          <div class="relative overflow-hidden aspect-[4/3] bg-forest-dark/10">
+            <img 
+              src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02607.jpg" 
+              alt="Penthouse Room at Yogadaa Royal Resort" 
+              loading="lazy"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+            />
+            <div class="absolute top-4 left-4 bg-gold text-forest-dark text-xs font-bold px-3.5 py-1.5 rounded-full tracking-wider uppercase shadow-sm">
+              Signature Suite
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-serif font-bold text-forest-dark mb-2 group-hover:text-terracotta transition-colors">
+                Penthouse Room
+              </h3>
+              <p class="text-forest-dark/75 text-sm sm:text-base leading-relaxed mb-6">
+                The pinnacle of royal indulgence. Unrivaled 360-degree hilltop panoramas, master lounge, luxury fixtures, and elevated seclusion.
+              </p>
+            </div>
+            
+            <div class="pt-4 border-t border-forest-dark/10 flex items-center justify-between">
+              <span class="text-xs uppercase tracking-wider text-olive font-semibold">Panoramic View</span>
+              <a 
+                href="rooms.html" 
+                class="inline-flex items-center gap-1.5 text-terracotta font-semibold text-sm hover:text-[#a55a2d] transition group-hover:translate-x-1 duration-200"
+              >
+                <span>View Details</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Button -->
+      <div class="text-center mt-14" data-aos="fade-up">
+        <a 
+          href="rooms.html" 
+          class="inline-flex items-center gap-3 bg-forest-dark hover:bg-forest-dark/90 text-cream px-8 py-4 rounded-full font-semibold transition duration-300 shadow-md hover:shadow-lg"
+        >
+          <span>Explore All Room Types & Rates</span>
+          <span>→</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- 6. DINING SECTION (Dark Forest Palette)                    -->
+  <!-- ========================================================= -->
+  <section id="dining" class="py-24 md:py-32 bg-forest-dark text-cream relative overflow-hidden">
+    <!-- Subtle background ambience -->
+    <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#B8860B_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left Column: Image -->
+        <div data-aos="fade-in" class="relative group">
+          <div class="relative z-10 overflow-hidden rounded-3xl border-2 border-gold/30 shadow-2xl">
+            <img 
+              src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02558-scaled.jpg" 
+              alt="Fine Dining at Yogadaa Royal Resort" 
+              loading="lazy"
+              class="w-full h-[400px] sm:h-[480px] lg:h-[520px] object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            />
+          </div>
+          <!-- Decorative Gold Accent Border -->
+          <div class="absolute -bottom-4 -left-4 w-full h-full border border-gold/20 rounded-3xl -z-0"></div>
+          
+          <div class="absolute bottom-6 right-6 bg-forest-dark/90 backdrop-blur-md p-4 rounded-2xl border border-gold/30 shadow-xl hidden sm:block">
+            <span class="text-gold text-xs uppercase tracking-widest font-bold block mb-1">Gourmet Experience</span>
+            <span class="text-cream font-serif text-base">Traditional & International Flavors</span>
+          </div>
+        </div>
+
+        <!-- Right Column: Content -->
+        <div data-aos="fade-in" class="space-y-6">
+          <div class="inline-flex items-center gap-2">
+            <span class="w-8 h-[2px] bg-gold"></span>
+            <span class="text-gold tracking-[0.25em] uppercase text-xs sm:text-sm font-bold">DINING</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white leading-tight">
+            Fine Dining At Its Best
+          </h2>
+
+          <p class="text-cream/90 text-base sm:text-lg leading-relaxed font-normal">
+            Indulge in a culinary journey that blends traditional Indian flavors with international cuisine. Our expert chefs prepare every dish with passion, using the freshest local ingredients from the Mahabaleshwar region.
+          </p>
+
+          <!-- Features List -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-gold/20 text-gold flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="text-cream/90 font-medium text-base">Farm-to-table ingredients</span>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-gold/20 text-gold flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="text-cream/90 font-medium text-base">Multi-cuisine menu</span>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-gold/20 text-gold flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="text-cream/90 font-medium text-base">Scenic dining views</span>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-gold/20 text-gold flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="text-cream/90 font-medium text-base">Private dining available</span>
+            </div>
+
+          </div>
+
+          <div class="pt-6">
+            <a 
+              href="contact.html" 
+              class="inline-flex items-center gap-2 bg-terracotta hover:bg-[#a55a2d] text-cream px-8 py-3.5 rounded-full font-medium transition duration-300 shadow-lg hover:shadow-xl"
+            >
+              <span>Reserve A Table</span>
+              <span>→</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- 7. GALLERY SECTION                                        -->
+  <!-- ========================================================= -->
+  <section id="gallery" class="py-24 md:py-32 bg-cream text-forest-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <div class="inline-flex items-center gap-2 justify-center mb-3">
+          <span class="w-8 h-[2px] bg-olive"></span>
+          <span class="text-olive tracking-[0.25em] uppercase text-xs sm:text-sm font-bold">VISUAL GLIMPSE</span>
+          <span class="w-8 h-[2px] bg-olive"></span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-forest-dark leading-tight">
+          Gallery
+        </h2>
+        <p class="text-forest-dark/75 mt-3 text-base sm:text-lg">
+          Take a visual tour through our scenic property, architecture, and luxury hill station escapes.
+        </p>
+      </div>
+
+      <!-- Masonry-style Grid of 9 Photos -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Image 1 -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="100" 
+          class="group relative overflow-hidden rounded-2xl shadow-card cursor-pointer aspect-[4/3] bg-forest-dark/10"
+          onclick="openLightbox('https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02558-scaled.jpg', 'Restaurant & Fine Dining')"
+        >
+          <img 
+            src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02558-scaled.jpg" 
+            alt="Resort Dining Atmosphere" 
+            loading="lazy"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-forest-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div class="text-warm-white">
+              <p class="text-xs uppercase tracking-wider text-gold font-semibold">Fine Dining</p>
+              <h4 class="font-serif text-lg font-bold">Resort Restaurant</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="150" 
+          class="group relative overflow-hidden rounded-2xl shadow-card cursor-pointer aspect-[4/3] bg-forest-dark/10"
+          onclick="openLightbox('https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02561-scaled.jpg', 'Dining Hall Ambience')"
+        >
+          <img 
+            src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02561-scaled.jpg" 
+            alt="Dining Hall Ambience" 
+            loading="lazy"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-forest-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div class="text-warm-white">
+              <p class="text-xs uppercase tracking-wider text-gold font-semibold">Culinary Serenity</p>
+              <h4 class="font-serif text-lg font-bold">Elegant Interiors</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="200" 
+          class="group relative overflow-hidden rounded-2xl shadow-card cursor-pointer aspect-[4/3] bg-forest-dark/10"
+          onclick="openLightbox('https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02797-scaled.jpg', 'Outdoor Grounds & Lawns')"
+        >
+          <img 
+            src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02797-scaled.jpg" 
+            alt="Outdoor Grounds & Lawns" 
+            loading="lazy"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-forest-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div class="text-warm-white">
+              <p class="text-xs uppercase tracking-wider text-gold font-semibold">Nature & Flora</p>
+              <h4 class="font-serif text-lg font-bold">Lush Gardens</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="250" 
+          class="group relative overflow-hidden rounded-2xl shadow-card cursor-pointer aspect-[4/3] bg-forest-dark/10"
+          onclick="openLightbox('https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02812-scaled.jpg', 'Hillside Pathway')"
+        >
+          <img 
+            src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02812-scaled.jpg" 
+            alt="Hillside Pathway" 
+            loading="lazy"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-forest-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div class="text-warm-white">
+              <p class="text-xs uppercase tracking-wider text-gold font-semibold">Walkways</p>
+              <h4 class="font-serif text-lg font-bold">Hillside Promenade</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 5 -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="300" 
+          class="group relative overflow-hidden rounded-2xl shadow-card cursor-pointer aspect-[4/3] bg-forest-dark/10"
+          onclick="openLightbox('https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02779-scaled.jpg', 'Scenic Resort Architecture')"
+        >
+          <img 
+            src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02779-scaled.jpg" 
+            alt="Scenic Resort Architecture" 
+            loading="lazy"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-forest-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div class="text-warm-white">
+              <p class="text-xs uppercase tracking-wider text-gold font-semibold">Hill Architecture</p>
+              <h4 class="font-serif text-lg font-bold">Estate Living</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 6 -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="350" 
+          class="group relative overflow-hidden rounded-2xl shadow-card cursor-pointer aspect-[4/3] bg-forest-dark/10"
+          onclick="openLightbox('https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02781-scaled.jpg', 'Resort Courtyard View')"
+        >
+          <img 
+            src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC02781-scaled.jpg" 
+            alt="Resort Courtyard View" 
+            loading="lazy"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-forest-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div class="text-warm-white">
+              <p class="text-xs uppercase tracking-wider text-gold font-semibold">Courtyard</p>
+              <h4 class="font-serif text-lg font-bold">Peaceful Surroundings</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 7 -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="400" 
+          class="group relative overflow-hidden rounded-2xl shadow-card cursor-pointer aspect-[4/3] bg-forest-dark/10"
+          onclick="openLightbox('https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC00761-scaled.jpg', 'Luxury Room Interiors')"
+        >
+          <img 
+            src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC00761-scaled.jpg" 
+            alt="Luxury Room Interiors" 
+            loading="lazy"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-forest-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div class="text-warm-white">
+              <p class="text-xs uppercase tracking-wider text-gold font-semibold">Suites</p>
+              <h4 class="font-serif text-lg font-bold">Refined Comfort</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 8 -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="450" 
+          class="group relative overflow-hidden rounded-2xl shadow-card cursor-pointer aspect-[4/3] bg-forest-dark/10"
+          onclick="openLightbox('https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC00778-scaled.jpg', 'Premium Living Space')"
+        >
+          <img 
+            src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC00778-scaled.jpg" 
+            alt="Premium Living Space" 
+            loading="lazy"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-forest-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div class="text-warm-white">
+              <p class="text-xs uppercase tracking-wider text-gold font-semibold">Bedrooms</p>
+              <h4 class="font-serif text-lg font-bold">Unwind in Style</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 9 -->
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="500" 
+          class="group relative overflow-hidden rounded-2xl shadow-card cursor-pointer aspect-[4/3] bg-forest-dark/10"
+          onclick="openLightbox('https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC00807-scaled.jpg', 'Scenic Balcony Vista')"
+        >
+          <img 
+            src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DSC00807-scaled.jpg" 
+            alt="Scenic Balcony Vista" 
+            loading="lazy"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-forest-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div class="text-warm-white">
+              <p class="text-xs uppercase tracking-wider text-gold font-semibold">Balconies</p>
+              <h4 class="font-serif text-lg font-bold">Misty Hill Vistas</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- 8. TESTIMONIALS / CTA SECTION (Full Parallax)             -->
+  <!-- ========================================================= -->
+  <section 
+    class="relative py-28 md:py-36 hero-parallax overflow-hidden flex items-center justify-center text-center" 
+    style="background-image: url('https://yogadaaroyalresort.com/wp-content/uploads/2026/04/DJI_20260323191352_0352_D-scaled.jpg');"
+  >
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-forest-dark/70 bg-gradient-to-t from-forest-dark/90 via-forest-dark/60 to-forest-dark/80"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6" data-aos="fade-up">
+      
+      <!-- Subtle Golden Star Rating -->
+      <div class="flex items-center justify-center gap-1.5 text-gold text-lg mb-4">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        <span class="text-cream text-xs uppercase tracking-widest ml-2 font-medium">4.9 / 5 Guest Rating</span>
+      </div>
+
+      <!-- Main Heading -->
+      <h2 class="text-3xl sm:text-5xl md:text-6xl font-serif font-bold text-white leading-tight mb-6">
+        Create Unforgettable Memories
+      </h2>
+
+      <!-- Subtext -->
+      <p class="text-cream text-lg sm:text-xl md:text-2xl font-normal max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow">
+        Book your stay at Yogadaa Royal Resort and experience the perfect hill-station getaway.
+      </p>
+
+      <!-- CTA Button linking to contact.html -->
+      <div>
+        <a 
+          href="contact.html" 
+          class="inline-flex items-center gap-2 bg-terracotta hover:bg-[#a55a2d] text-cream px-10 py-4 rounded-full font-semibold text-lg transition duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 border border-cream/20"
+        >
+          <span>Book Now</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Call assistance line -->
+      <p class="text-cream/80 text-sm mt-6">
+        Prefer to speak with our concierge? Call directly: 
+        <a href="tel:+919637373522" class="text-gold font-semibold hover:underline">+91-9637373522</a>
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- 9. FOOTER (Dark Forest Background)                        -->
+  <!-- ========================================================= -->
+  <footer class="bg-forest-dark text-cream pt-20 pb-10 border-t border-forest-dark/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- 4 Columns Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        
+        <!-- Column 1: Logo & Bio -->
+        <div class="space-y-4">
+          <a href="index.html" class="inline-block bg-cream/95 p-1.5 rounded-xl shadow-sm">
+            <img 
+              src="https://yogadaaroyalresort.com/wp-content/uploads/2026/04/bg-remove-logo.png" 
+              alt="Yogadaa Royal Resort" 
+              class="h-14 w-auto object-contain"
+            />
+          </a>
+          <p class="text-cream/75 text-sm leading-relaxed">
+            A palace of peace nestled among Panchgani's misty hills. Experience royal hospitality, world-class comfort, and tranquil hill panoramas.
+          </p>
+
+          <!-- Social Media Icons (Placeholders) -->
+          <div class="flex items-center space-x-3 pt-2">
+            <a href="#" class="w-9 h-9 rounded-full bg-cream/10 hover:bg-gold hover:text-forest-dark flex items-center justify-center transition duration-200" aria-label="Instagram">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-cream/10 hover:bg-gold hover:text-forest-dark flex items-center justify-center transition duration-200" aria-label="Facebook">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-cream/10 hover:bg-gold hover:text-forest-dark flex items-center justify-center transition duration-200" aria-label="TripAdvisor">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm-3.5 13.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7zm7 0a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-cream/10 hover:bg-gold hover:text-forest-dark flex items-center justify-center transition duration-200" aria-label="YouTube">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="space-y-4">
+          <h4 class="font-serif text-lg font-bold text-white border-b border-cream/15 pb-2">Quick Links</h4>
+          <ul class="space-y-2.5 text-sm text-cream/80">
+            <li><a href="#hero" class="hover:text-gold transition">Home</a></li>
+            <li><a href="#about" class="hover:text-gold transition">About Us</a></li>
+            <li><a href="rooms.html" class="hover:text-gold transition">Our Rooms & Suites</a></li>
+            <li><a href="#dining" class="hover:text-gold transition">Dining & Restaurant</a></li>
+            <li><a href="#amenities" class="hover:text-gold transition">Services & Amenities</a></li>
+            <li><a href="#gallery" class="hover:text-gold transition">Photo Gallery</a></li>
+            <li><a href="contact.html" class="hover:text-gold transition">Contact & Directions</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="space-y-4">
+          <h4 class="font-serif text-lg font-bold text-white border-b border-cream/15 pb-2">Contact Info</h4>
+          <ul class="space-y-3 text-sm text-cream/80">
+            <li class="flex items-start gap-3">
+              <span class="text-gold mt-1">📍</span>
+              <span>Panchgani, Mahabaleshwar, Maharashtra, India</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-gold">📞</span>
+              <a href="tel:+919637373522" class="hover:text-gold transition">+91-9637373522</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-gold">✉️</span>
+              <a href="mailto:booking@yogadaaroyalresort.com" class="hover:text-gold transition break-all">booking@yogadaaroyalresort.com</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-gold">🕒</span>
+              <span>Check-in: 1:00 PM | Check-out: 11:00 AM</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter Signup -->
+        <div class="space-y-4">
+          <h4 class="font-serif text-lg font-bold text-white border-b border-cream/15 pb-2">Newsletter</h4>
+          <p class="text-cream/75 text-sm leading-relaxed">
+            Subscribe for exclusive seasonal offers, festive retreats, and hill station updates.
+          </p>
+          <form id="newsletter-form" onsubmit="handleNewsletter(event)" class="space-y-2.5">
+            <div class="relative">
+              <input 
+                type="email" 
+                id="newsletter-email" 
+                required 
+                placeholder="Enter your email" 
+                class="w-full bg-cream/10 border border-cream/20 rounded-xl px-4 py-2.5 text-sm text-cream placeholder-cream/50 focus:outline-none focus:ring-2 focus:ring-gold"
+              />
+            </div>
+            <button 
+              type="submit" 
+              class="w-full bg-terracotta hover:bg-[#a55a2d] text-cream py-2.5 rounded-xl text-sm font-semibold transition duration-200 shadow"
+            >
+              Subscribe
+            </button>
+            <p id="newsletter-msg" class="text-xs text-gold hidden"></p>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="border-t border-cream/10 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-cream/60 gap-4">
+        <p>© 2026 Yogadaa Royal Resort. All Rights Reserved.</p>
+        <div class="flex items-center space-x-6">
+          <a href="#" class="hover:text-gold transition">Privacy Policy</a>
+          <a href="#" class="hover:text-gold transition">Terms & Conditions</a>
+          <a href="contact.html" class="hover:text-gold transition">Location Map</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ========================================================= -->
+  <!-- 10. WHATSAPP FLOATING BUTTON                              -->
+  <!-- ========================================================= -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center group">
+    <!-- Hover Tooltip -->
+    <span class="hidden sm:inline-block mr-3 px-3.5 py-1.5 bg-forest-dark/90 text-cream text-xs rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+      Chat on WhatsApp
+    </span>
+
+    <a 
+      href="https://wa.me/919637373522?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20Yogadaa%20Royal%20Resort." 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="whatsapp-pulse bg-[#25D366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-transform duration-300 transform group-hover:scale-110"
+      aria-label="Chat with Yogadaa Royal Resort on WhatsApp"
+    >
+      <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+        <path d="M17.507 14.307l-.009.075c-2.099-1.002-1.22-.588-1.683-.808-.297-.14-.627-.123-.902.046l-.689.421c-.244.15-.55.15-.794-.002-1.554-.972-2.585-2.003-3.557-3.557-.152-.244-.152-.55 0-.794l.421-.689c.169-.275.186-.605.046-.902-.22-.463.194.416-.808-1.683l.075-.009c-.314-.041-.628.082-.832.327l-1.096 1.315c-.475.57-.655 1.32-.495 2.045.546 2.477 2.148 4.673 4.417 6.06 1.488.909 3.227 1.401 5.006 1.401.127 0 .254-.003.381-.008.725.16 1.475-.02 2.045-.495l1.315-1.096c.245-.204.368-.518.327-.832zm2.083-9.917C17.447 2.247 14.82 1.135 12.012 1.135 6.016 1.135 1.135 6.016 1.135 12.012c0 1.916.499 3.788 1.447 5.434L1 23l5.702-1.496c1.583.864 3.376 1.32 5.31 1.32 5.996 0 10.877-4.881 10.877-10.877 0-2.808-1.112-5.435-3.3-7.552z"/>
+      </svg>
+    </a>
+  </div>
+
+
+  <!-- ========================================================= -->
+  <!-- 11. LIGHTBOX MODAL (Interactive for Gallery)               -->
+  <!-- ========================================================= -->
+  <div 
+    id="lightbox-modal" 
+    class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4 transition-opacity duration-300"
+    onclick="closeLightbox(event)"
+  >
+    <div class="relative max-w-5xl max-h-[90vh] flex flex-col items-center">
+      <!-- Close Button -->
+      <button 
+        onclick="closeLightboxNow()" 
+        class="absolute -top-12 right-0 text-white hover:text-gold text-3xl font-light focus:outline-none"
+        aria-label="Close Lightbox"
+      >
+        ✕
+      </button>
+
+      <img 
+        id="lightbox-img" 
+        src="" 
+        alt="Resort Gallery Photo" 
+        class="max-h-[80vh] w-auto rounded-xl shadow-2xl object-contain border border-white/10"
+      />
+      <p id="lightbox-caption" class="text-cream text-center mt-4 font-serif text-lg tracking-wide"></p>
+    </div>
+  </div>
+
+
+  <!-- ========================================================= -->
+  <!-- SCRIPTS: AOS & Navbar Scroll & Mobile Menu                -->
+  <!-- ========================================================= -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS scroll animation
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Sticky Navbar Scroll Effect (Transparent to Solid Cream)
+    const nav = document.getElementById('main-nav');
+    const desktopNavContainer = document.getElementById('desktop-nav-container');
+    const logoContainer = document.getElementById('logo-container');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        nav.classList.remove('bg-transparent', 'py-4');
+        nav.classList.add('bg-cream', 'shadow-md', 'py-2.5', 'border-b', 'border-forest-dark/10');
+        if (desktopNavContainer) {
+          desktopNavContainer.classList.remove('bg-cream/90', 'md:bg-cream/80', 'shadow-sm', 'border-forest-dark/10');
+          desktopNavContainer.classList.add('bg-transparent', 'border-transparent', 'shadow-none');
+        }
+        if (logoContainer) {
+          logoContainer.classList.remove('shadow-sm', 'bg-cream/90');
+          logoContainer.classList.add('bg-transparent');
+        }
+      } else {
+        nav.classList.add('bg-transparent', 'py-4');
+        nav.classList.remove('bg-cream', 'shadow-md', 'py-2.5', 'border-b', 'border-forest-dark/10');
+        if (desktopNavContainer) {
+          desktopNavContainer.classList.add('bg-cream/90', 'md:bg-cream/80', 'shadow-sm', 'border-forest-dark/10');
+          desktopNavContainer.classList.remove('bg-transparent', 'border-transparent', 'shadow-none');
+        }
+        if (logoContainer) {
+          logoContainer.classList.add('shadow-sm', 'bg-cream/90');
+          logoContainer.classList.remove('bg-transparent');
+        }
+      }
+    });
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    mobileBtn.addEventListener('click', () => {
+      const isExpanded = mobileMenu.classList.contains('hidden');
+      if (isExpanded) {
+        mobileMenu.classList.remove('hidden');
+        hamburgerIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+        mobileBtn.setAttribute('aria-expanded', 'true');
+      } else {
+        mobileMenu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        mobileBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close Mobile Menu on link click
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        mobileBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Lightbox Functionality
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+
+    function openLightbox(src, caption) {
+      lightboxImg.src = src;
+      lightboxCaption.textContent = caption || 'Yogadaa Royal Resort';
+      lightboxModal.classList.remove('hidden');
+      lightboxModal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightboxNow() {
+      lightboxModal.classList.add('hidden');
+      lightboxModal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    function closeLightbox(e) {
+      if (e.target === lightboxModal) {
+        closeLightboxNow();
+      }
+    }
+
+    // Keyboard support for Lightbox
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !lightboxModal.classList.contains('hidden')) {
+        closeLightboxNow();
+      }
+    });
+
+    // Simple Newsletter handler
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const email = document.getElementById('newsletter-email').value;
+      const msg = document.getElementById('newsletter-msg');
+      if (email) {
+        msg.textContent = 'Thank you for subscribing! We look forward to welcoming you.';
+        msg.classList.remove('hidden');
+        document.getElementById('newsletter-form').reset();
+        setTimeout(() => {
+          msg.classList.add('hidden');
+        }, 5000);
+      }
+    }
+  </script>
+</body>
+</html>
